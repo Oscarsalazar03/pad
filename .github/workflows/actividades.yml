@@ -28,9 +28,9 @@ jobs:
       - name: paso4 - instalar dependencias
         run: pip install -e .
       - name: paso5 - Ejecutar script
-        run: python src/actividad_2/actividad_2.py 
+        run: python src/actividad-2/actividad_2.py 
       - name: paso6 - Ejecutar script
-        run: python src/actividad_3/actividad_3.py 
+        run: python src/actividad-3/actividad_3.py 
 
       - name: Commit and Push changes
         uses: stefanzweifel/git-auto-commit-action@v5
