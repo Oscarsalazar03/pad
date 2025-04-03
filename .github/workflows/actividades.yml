@@ -1,4 +1,4 @@
-name: Actividad 2 y actividad 3
+name: Actividad 2, actividad 3 y actividad final
 
 on:
   push:
@@ -27,15 +27,17 @@ jobs:
         run: pip install --upgrade pip
       - name: paso4 - instalar dependencias
         run: pip install -e .
-      - name: paso5 - Ejecutar script
+      - name: paso5 - Ejecutar Actividad 2
         run: python src/actividad-2/actividad_2.py 
-      - name: paso6 - Ejecutar script
+      - name: paso6 - Ejecutar Actividad 3
         run: python src/actividad-3/actividad_3.py 
+      - name: paso6 - Ejecutar Actividad Final
+        run: python src/actividad_final.ipynb
 
       - name: Commit and Push changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: entrega actividad 2, actividad 3
+          commit_message: entrega actividad 2, actividad 3 y actividad final
           commit_user_name: Oscar Salazar y Sebastian Echeverri [GitHub Actions]
           commit_user_email: Oscar.salazar@est.iudigital.edu.co
           commit_author: Oscar Salazar y Sebastian Echeverri <Oscar.salazar@est.iudigital.edu.co>
